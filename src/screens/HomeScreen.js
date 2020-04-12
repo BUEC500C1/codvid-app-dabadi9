@@ -8,9 +8,9 @@ const HomeScreen = ({ navigation }) => {
         <Spacer>
             <Text style={styles.title}>Covid 19 Report App</Text>
             <Button text="React Native Tutorial" onSubmit={() => navigation.navigate('ReactNative')} />
-            {/* <Button text="Map" onSubmit={() => {console.log('Map')}} />
-            <Button text="List view of Covid 19" onSubmit={() => {console.log('List')}} />
-            <Button text="Map view of Covid 19" onSubmit={() => {console.log('Map Covid')}} /> */}
+            <Button text="Map" onSubmit={() => navigation.navigate('Map')} />
+            {/* <Button text="List view of Covid 19" onSubmit={() => navigation.navigate('CovidList')} /> */}
+            {/* <Button text="Map view of Covid 19" onSubmit={() => {console.log('Map Covid')}} /> */}
         </Spacer>
     );
 }

@@ -12,7 +12,7 @@ const CounterScreen = () => {
             >
                 <Text>Click me</Text>
             </TouchableOpacity>
-            <View style={styles.countContainer}>
+            <View>
                 <Text>
                     You clicked {counter} times
           </Text>
