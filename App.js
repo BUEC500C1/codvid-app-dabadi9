@@ -6,7 +6,7 @@ import HelloWorldScreen from './src/screens/HelloWorldScreen';
 import GreetingsScreen from './src/screens/GreetingsScreen';
 import CounterScreen from './src/screens/CounterScreen';
 import MapScreen from './src/screens/MapScreen';
-// import CovidListScreen from './src/screens/CovidListScreen';
+import CovidListScreen from './src/screens/CovidListScreen';
 
 
 const navigator = createStackNavigator({
@@ -15,8 +15,8 @@ const navigator = createStackNavigator({
   HelloWorld: HelloWorldScreen,
   Greetings: GreetingsScreen,
   Counter: CounterScreen,
-  Map: MapScreen
-  // CovidList: CovidListScreen
+  Map: MapScreen,
+  CovidList: CovidListScreen
 }, {
   initialRouteName: 'Home',
   defaultNavigationOptions: {

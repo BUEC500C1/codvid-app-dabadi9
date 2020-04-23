@@ -2,6 +2,7 @@
   "expo": {
     "name": "Covid19",
     "slug": "Covid19",
+    "backgroundColor": "#ffffff",
     "platforms": [
       "ios",
       "android",
