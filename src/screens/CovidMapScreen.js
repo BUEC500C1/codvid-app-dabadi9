@@ -41,25 +41,22 @@ const CovidMapScreen = () => {
     };
 
     return (
-        <View>
-            <Text style={styles.text}>Tap on a Country</Text>
-            <MapView
-                style={styles.map}
-                onPress={(e) => getCountry(e.nativeEvent.coordinate)}
-            >
-                {markers.map(marker => (
-                    <Marker
-                        key={marker.key.toString()}
-                        coordinate={{
-                            longitude: marker.Lon,
-                            latitude: marker.Lat,
-                        }}
-                        title={marker.Country}
-                        description={`Confirmed: ${marker.Confirmed} Deaths: ${marker.Deaths} Recovered: ${marker.Recovered}`}
-                    />
-                ))}
-            </MapView>
-        </View>
+        <MapView
+            style={styles.map}
+            onPress={(e) => getCountry(e.nativeEvent.coordinate)}
+        >
+            {markers.map(marker => (
+                <Marker
+                    key={marker.key.toString()}
+                    coordinate={{
+                        longitude: marker.Lon,
+                        latitude: marker.Lat,
+                    }}
+                    title={marker.Country}
+                    description={`Confirmed: ${marker.Confirmed} Deaths: ${marker.Deaths} Recovered: ${marker.Recovered}`}
+                />
+            ))}
+        </MapView>
     );
 };
 
